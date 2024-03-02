@@ -52,7 +52,7 @@ Then Use the Sitecore CLI to serialize items into local environemnt
 
 
 ### Configuration
-The Azure Func all solution requires the following settings to run locally. A sample [`local.settings.json`](src/DocuTranslator/TeamHorizon.DocuTranslator/local%20.settings-sample.json) has been included for reference
+The Azure Func app solution requires the following settings to run locally. A sample [`local.settings.json`](src/DocuTranslator/TeamHorizon.DocuTranslator/local%20.settings-sample.json) has been included for reference
  ```ps1
 1. "docu_translation_endpoint": "Azure AI services document translation endpoint, more details in Usage instructions below"
 2. "azure_key": "Azure AI services document translation key"
@@ -63,14 +63,17 @@ The Azure Func all solution requires the following settings to run locally. A sa
  ```
 
 ## Usage instructions
-⟹ Provide documentation about your module, how do the users use your module, where are things located, what do the icons mean, are there any secret shortcuts etc.
 
-To invoke the Func app locally, create POST request using a tool like Postman, as shown below. Use `X-Api-Key` to pass API key on the header
+To invoke the Func app locally, create POST request using a tool like Postman, as shown below. Use `X-Api-Key` to pass required `funcapp_api_key`on the header
 
 ![Invoke Func app locally](docs/images/funcapp-postman.png?raw=true "Sample post request")
 
-Document Translation is only supported in the S1 Standard Service Plan (Pay-as-you-go) or in the D3 Volume Discount Plan. This service needs to be provisioned on Azure Portal
-[Azure AI Translator](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/translator)
+The published Func app on Azure portal is configured on `/sitecore/system/Modules/PowerShell/Script Library/teamhorizon2024/Azure API Settings`. 
+![Func app API settings](docs/images/funcapp-api-settings.png?raw=true "Sample post request")
+As you can see, here we configure both the Func app URL and API key on this item.
+
+Document Translation is only supported in the S1 Standard Service Plan (Pay-as-you-go) or in the D3 Volume Discount Plan. This service needs to be provisioned on Azure Portal [Azure AI Translator](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/translator), if you are running your own local instance of the Func app. For the published Func app on Azure portal, you do not need to configure Document Translation.
+
 
 ## XM Cloud Local setup
 ⟹ [Adopted from XM Cloud Starter Kit (Next JS)](https://github.com/sitecorelabs/xmcloud-foundation-head-staging)

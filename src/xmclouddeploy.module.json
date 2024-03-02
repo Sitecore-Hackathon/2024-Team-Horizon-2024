@@ -14,6 +14,11 @@
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
+                "name": "powershellModule",
+                "path": "/sitecore/system/Modules/PowerShell/Script Library/teamhorizon2024",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
                 "name": "mediaLibrary",
                 "path": "/sitecore/media library/Project/teamhorizon2024",
                 "allowedPushOperations": "CreateUpdateAndDelete"
