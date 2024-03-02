@@ -34,7 +34,7 @@ namespace TeamHorizon.DocuTranslator.Services
         /// </summary>
         public string DocuTargetLang { get; set; }
         public string SlotName { get; set; }
-
+        public string FuncappApikey { get; set; }
         public string GetEnvironmentVariable(string name)
         {
             return Environment.GetEnvironmentVariable(name, EnvironmentVariableTarget.Process);
@@ -56,7 +56,8 @@ namespace TeamHorizon.DocuTranslator.Services
             AzureKey = GetEnvironmentVariable("azure_key");
             DocuSourceUri = GetEnvironmentVariable("docu_source_uri");
             DocuTargetUri = GetEnvironmentVariable("docu_target_uri");
-            DocuTargetLang = GetEnvironmentVariable("docu_target_lang");;
+            DocuTargetLang = GetEnvironmentVariable("docu_target_lang");
+            FuncappApikey = GetEnvironmentVariable("funcapp_api_key");
         }
     }
 }

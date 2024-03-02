@@ -12,9 +12,18 @@ Team Horizon 2024
 
 # Our Solution Summary
 
-This is an attempt to design a solution that leverages Azure AI Translator service to automate document transcreations to different languages. The idea is to integrate XM Cloud with Batch document translation service, where by documents are pushed from Media Library in bulk into Azure Blob storage. They are then translated in bulk and are stored in a staged location within Azure Blob storage. The XM Cloud can pull those in Media Libary. 
+This is an attempt to design a solution that leverages Azure AI Translator service to automate document transcreations to different languages. The idea is to integrate XM Cloud with Batch document translations service, where by documents are pushed from Media Library in bulk into Azure Blob storage. They are then translated in bulk and are stored in a staged location within Azure Blob storage. The XM Cloud can then pull those back into Media Libary, for delivery to a global audience. 
+
+The vision is to enable businesses to take advantage of advances in AI natural language processing, and reduce costs and time it takes to transcreate business critical documents such as marketing material for their markets. Since Azure AI can translate documents whilst preserving their formats, this for me a the best use of AI to meet business needs.
 
 I realise was a huge undertaking, but I have started building the various componets to deliver the vision. An Azure AI Services Func app microservice is located within the DocuTranslator subfolder.
+
+## Sample transcreation output
+
+Below is a sample pdf image that has been transcreated with this service. The document structure is preserved, but not sure about the font.
+
+![Sample transcreated pdf](docs/images/1-sample-document-transcreation.png)
+
 
 ## Video link
 ⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
@@ -45,11 +54,12 @@ Then Use the Sitecore CLI to serialize items into local environemnt
 
 A solution requires the following settings to run locally
  ```ps1
-1. "docu_translation_endpoint": "Azure AI services document translation endpoint",
-2. "azure_key": "Azure AI services document translation key",
-3. "docu_source_uri": "The URL for the source container containing documents to be translated",
-4. "docu_target_uri": "The URL for the target container to which the translated documents are written",
+1. "docu_translation_endpoint": "Azure AI services document translation endpoint"
+2. "azure_key": "Azure AI services document translation key"
+3. "docu_source_uri": "The URL for the source container containing documents to be translated"
+4. "docu_target_uri": "The URL for the target container to which the translated documents are written"
 5. "docu_target_lang": "The language code for the translated documents, e.g., fr for French"
+6. "funcapp_api_key":"Your custom function app API key"
  ```
 ### Configuration
 ⟹ If there are any custom configuration that has to be set manually then remember to add all details here.

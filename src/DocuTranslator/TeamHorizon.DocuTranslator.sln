@@ -5,6 +5,11 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamHorizon.DocuTranslator", "TeamHorizon.DocuTranslator\TeamHorizon.DocuTranslator.csproj", "{7A9E27ED-3247-4C72-8BC6-F49658E45A23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamHorizon.DocuTranslator.Tests", "TeamHorizon.DocuTranslator.Tests\TeamHorizon.DocuTranslator.Tests.csproj", "{0115E710-D533-42BE-A9AA-B27E7A85A03E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7A9E27ED-3247-4C72-8BC6-F49658E45A23} = {7A9E27ED-3247-4C72-8BC6-F49658E45A23}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{7A9E27ED-3247-4C72-8BC6-F49658E45A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A9E27ED-3247-4C72-8BC6-F49658E45A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A9E27ED-3247-4C72-8BC6-F49658E45A23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0115E710-D533-42BE-A9AA-B27E7A85A03E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0115E710-D533-42BE-A9AA-B27E7A85A03E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0115E710-D533-42BE-A9AA-B27E7A85A03E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0115E710-D533-42BE-A9AA-B27E7A85A03E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

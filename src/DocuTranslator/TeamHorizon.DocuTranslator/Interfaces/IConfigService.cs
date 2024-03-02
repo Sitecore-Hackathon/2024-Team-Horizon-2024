@@ -10,5 +10,6 @@
         string DocuTargetUri { get; set; }
         string DocuTargetLang { get; set; }
         string SlotName { get; set; }
+        string FuncappApikey { get; set; }
     }
 }

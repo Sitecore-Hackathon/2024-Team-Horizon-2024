@@ -10,7 +10,8 @@
         },
         "logLevel": {
             "TeamHorizon.DocuTranslator.AzureAIDocuTranslation": "Information",
-            "TeamHorizon.DocuTranslator.Services.ConfigService": "Information"
+            "TeamHorizon.DocuTranslator.Services.ConfigService": "Information",
+            "TeamHorizon.DocuTranslator.Services.BatchDocuTranslationService": "Information"
         }
     }
 }

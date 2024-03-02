@@ -31,6 +31,18 @@ namespace TeamHorizon.DocuTranslator
                 _logger.LogInformation("C# HTTP trigger function started processing a request.");
                 _configService.LogConfigValues();
 
+                req.Headers.TryGetValue("X-Api-Key", out var funcappApikey);
+                if (string.IsNullOrEmpty(funcappApikey))
+                {
+                    _logger.LogInformation("Missing Funcapp api key.");
+                    return new NotFoundObjectResult("Missing Funcapp api key.");
+                }
+                if (funcappApikey != _configService.FuncappApikey)
+                {
+                    _logger.LogInformation("Invalid Funcapp api key.");
+                    return new NotFoundObjectResult("Invalid Funcapp api key.");
+                }
+
                 string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
                 _logger.LogInformation($"Request body: {requestBody}");
                 dynamic data = JsonConvert.DeserializeObject(requestBody);
