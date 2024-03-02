@@ -26,24 +26,18 @@ Below is a sample pdf image that has been transcreated with this service. The do
 
 
 ## Video link
-⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
-
-⟹ [Replace this Video link](#video-link)
-
+⟹ Sorry no video this time round
 
 
 ## Pre-requisites and Dependencies
 
 ⟹ Does your module rely on other Sitecore modules or frameworks?
 
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configuredn Azure AI Services Func app microservice within the DocuTranslator
+- Azure AI Services Func app microservice, further details below
 
-_Remove this subsection if your entry does not have any prerequisites other than Sitecore_
 
 ## Installation instructions
-⟹ To run locally, refer to  'Development' section.
+To run locally, refer to  'Development' section.
 Then Use the Sitecore CLI to serialize items into local environemnt
 
  ```ps1
@@ -52,34 +46,27 @@ Then Use the Sitecore CLI to serialize items into local environemnt
 3. dotnet sitecore ser pull -n "default"
 ```
 
-A solution requires the following settings to run locally
+
+### Configuration
+The Azure Func all solution requires the following settings to run locally. A sample [`local.settings.json`](src/DocuTranslator/TeamHorizon.DocuTranslator/local%20.settings-sample.json) has been included for reference
  ```ps1
-1. "docu_translation_endpoint": "Azure AI services document translation endpoint"
+1. "docu_translation_endpoint": "Azure AI services document translation endpoint, more details in Usage instructions below"
 2. "azure_key": "Azure AI services document translation key"
 3. "docu_source_uri": "The URL for the source container containing documents to be translated"
 4. "docu_target_uri": "The URL for the target container to which the translated documents are written"
 5. "docu_target_lang": "The language code for the translated documents, e.g., fr for French"
 6. "funcapp_api_key":"Your custom function app API key"
  ```
-### Configuration
-⟹ If there are any custom configuration that has to be set manually then remember to add all details here.
-
-_Remove this subsection if your entry does not require any configuration that is not fully covered in the installation instructions already_
 
 ## Usage instructions
 ⟹ Provide documentation about your module, how do the users use your module, where are things located, what do the icons mean, are there any secret shortcuts etc.
 
-Include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+To invoke the Func app locally, create POST request using a tool like Postman, as shown below. Use `X-Api-Key` to pass API key on the header
 
-![Hackathon Logo](docs/images/hackathon.png?raw=true "Hackathon Logo")
+![Invoke Func app locally](docs/images/funcapp-postman.png?raw=true "Sample post request")
 
-You can embed images of different formats too:
-
-![Deal With It](docs/images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://thiscatdoesnotexist.com/)
+Document Translation is only supported in the S1 Standard Service Plan (Pay-as-you-go) or in the D3 Volume Discount Plan. This service needs to be provisioned on Azure Portal
+[Azure AI Translator](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/translator)
 
 ## XM Cloud Local setup
 ⟹ [Adopted from XM Cloud Starter Kit (Next JS)](https://github.com/sitecorelabs/xmcloud-foundation-head-staging)

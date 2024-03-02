@@ -1,0 +1,13 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+        "docu_translation_endpoint": "<specify Azure AI services document translation endpoint>",
+        "azure_key": "<specify Azure AI services document translation key>",
+        "docu_source_uri": "<The URL for the source container containing documents to be translated>",
+        "docu_target_uri": "<The URL for the target container to which the translated documents are written>",
+        "docu_target_lang": "<enter target language, e.g., fr",
+        "funcapp_api_key": "<enter the func app api key>"
+    }
+}
