@@ -1,0 +1,31 @@
+﻿---
+ID: "98ad9d35-17a5-4637-8a8a-7bf97adeb242"
+Parent: "5d2e91b9-8d04-4e46-939d-57418d696e99"
+Template: "5d2e91b9-8d04-4e46-939d-57418d696e99"
+Path: /sitecore/templates/Project/teamhorizon2024/Headless Tenant/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240302T093331Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\julius.angwenyi@accenture.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\julius.angwenyi@accenture.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ab476e44-1520-4a86-a53b-b718fc7cf2f0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\julius.angwenyi@accenture.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240302T093331Z

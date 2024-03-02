@@ -1,0 +1,68 @@
+﻿---
+ID: "a3a5d5c0-272b-4e3e-a8ce-76c82bb2ca80"
+Parent: "e5719924-51ee-42e8-9126-b593b166dd02"
+Template: "9dc907c0-f8c3-48be-a7cb-164fee6925a1"
+Path: /sitecore/content/teamhorizon2024/teamhorizon2024/Home/About
+BranchID: "aa757cc9-f2da-4f78-a33d-9d382d5fcf92"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{23225FBE-3F16-436A-A6FA-440DC81D6F73}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{14DD8234-2932-4F7E-BAFE-CBE0A0087554}"
+          p:before="*"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="?Styles=%7bA8683FFE-1AC2-4C17-9A4F-769A3053FE64%7d%7c%7b31901FBF-48B9-4DC3-8386-FAE486A79ABD%7d%7c%7b40FAEED9-3088-4552-A1D3-F0C63CB2C90D%7d%7c%7b27E1E858-73C7-4662-889E-004B0717920A%7d%7c%7b1984B374-8535-4F36-B76F-BB3134E12209%7d%7c%7b6319F8F3-9F18-40DB-A547-1DF5880D2879%7d%7c%7b400A340C-0AD1-49A5-BB5A-E10758EF5357%7d%7c%7b9CF13917-85AC-4F63-8CEC-41CED377E5B3%7d%7c%7b5A4737BA-776E-4328-91AC-DD3A5B4A3BFE%7d%7c%7bB8BE9D17-49A3-403C-B855-FE29D08633C3%7d%7c%7bF08BDF8B-5D4C-4E6A-BB39-0BB0BB2CC1B1%7d%7c%7b3FEC75B7-FAFC-4056-9079-B19577482DB2%7d&amp;GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{D5D39F9B-2745-4000-B4E6-FACBE4FD7078}"
+          p:after="*[1=2]"
+          s:ds="local:/Data/Text 1"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:par="?GridParameters=%7b7465D855-992E-4DC2-9855-A03250DFA74B%7d%7c%7b959FDFBB-4691-4A17-816F-7A5330B8216A%7d%7c%7b175CB6DA-CF89-4D56-888C-EB79F514D12F%7d%7c%7b7DF615F7-0A53-42E1-A164-2B36D6126314%7d&amp;FieldNames=%7bC03920EE-7166-4A15-A31F-AC5255BA2C21%7d"
+          s:ph="/headless-main/container-1" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{B8E694EC-3576-4CC6-8628-AEE286A9AB38}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240302T093410Z
+    - ID: "2f318e61-8b33-41f3-811c-528d7b91a95a"
+      Hint: Title
+      Value: About Team Horizon
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: About
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\julius.angwenyi@accenture.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\julius.angwenyi@accenture.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "849a859c-695b-4b99-a631-b96d71eb3fd0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\julius.angwenyi@accenture.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240302T132044Z

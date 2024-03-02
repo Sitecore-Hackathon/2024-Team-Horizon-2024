@@ -1,0 +1,33 @@
+{
+    "$schema": "../.sitecore/schemas/ModuleFile.schema.json",
+    "namespace": "XmCloudTeamHorizon",
+    "items": {
+        "includes": [
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Project/teamhorizon2024",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "mediaLibrary",
+                "path": "/sitecore/media library/Project/teamhorizon2024",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "renderings",
+                "path": "/sitecore/layout/Renderings/Project/teamhorizon2024",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "placeholderSettings",
+                "path": "/sitecore/layout/Placeholder Settings/Project/teamhorizon2024",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "content",
+                "path": "/sitecore/content/teamhorizon2024",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            }          
+        ]
+    }
+}
