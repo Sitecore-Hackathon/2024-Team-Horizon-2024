@@ -12,11 +12,15 @@ Team Horizon 2024
 
 # Our Solution Summary
 
-This is an attempt to design a solution that leverages Azure AI Translator service to automate document transcreations to different languages. The idea is to integrate XM Cloud with Batch document translations service, where by documents are pushed from Media Library in bulk into Azure Blob storage. They are then translated in bulk and are stored in a staged location within Azure Blob storage. The XM Cloud can then pull those back into Media Libary, for delivery to a global audience. 
+This is an attempt to design a solution that leverages [Azure AI Translator](https://learn.microsoft.com/en-us/azure/ai-services/translator/translator-overview) service to automate document transcreations to different languages. The idea is to integrate XM Cloud with Batch document translations service, where by documents are pushed from Media Library in bulk into [Azure Blob storage](https://azure.microsoft.com/en-us/products/storage/blobs/). They are then translated in bulk and are stored in a staged location within Azure Blob storage. The XM Cloud can then pull those back into Media Libary, for delivery to a global audience. 
 
 The vision is to enable businesses to take advantage of advances in AI natural language processing, and reduce costs and time it takes to transcreate business critical documents such as marketing material for their markets. Since Azure AI can translate documents whilst preserving their formats, this for me a the best use of AI to meet business needs.
 
-I realise was a huge undertaking, but I have started building the various componets to deliver the vision. An Azure AI Services Func app microservice is located within the DocuTranslator subfolder.
+I realise was a huge undertaking, but I have started building the various componets to deliver the vision. This includes:
+- An Azure AI Services Func app microservice (which islocated within the `DocuTranslator` subfolder)
+- An SPE orechestration module built on XM Cloud to push documents from the Media Library to Azure Blob Storage for transcreation. Then pull the output and push it back into Media Library. 
+- An UX enhancement to XM Ribbon or Workflow to enable business users to trigger the process
+- I am planning to finalise the last two parts post the Hackathon due to timing constraints.
 
 ## Sample transcreation output
 
