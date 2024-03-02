@@ -9,6 +9,11 @@
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
+                "name": "system",
+                "path": "/sitecore/system/Webhooks/teamhorizon2024",
+                "allowedPushOperations": "CreateUpdateAndDelete"
+            },
+            {
                 "name": "mediaLibrary",
                 "path": "/sitecore/media library/Project/teamhorizon2024",
                 "allowedPushOperations": "CreateUpdateAndDelete"

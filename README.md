@@ -8,16 +8,13 @@
 Team Horizon 2024
 
 ## Category
-Best use of AI
+1. Best use of AI
 
-## Description
-⟹ Write a clear description of your hackathon entry.  
+# Our Solution Summary
 
-  - Module Purpose
-  - What problem was solved (if any)
-    - How does this module solve it
+This is an attempt to design a solution that leverages Azure AI Translator service to automate document transcreations to different languages. The idea is to integrate XM Cloud with Batch document translation service, where by documents are pushed from Media Library in bulk into Azure Blob storage. They are then translated in bulk and are stored in a staged location within Azure Blob storage. The XM Cloud can pull those in Media Libary. 
 
-_You can alternately paste a [link here](#docs) to a document within this repo containing the description._
+I realise was a huge undertaking, but I have started building the various componets to deliver the vision. An Azure AI Services Func app microservice is located within the DocuTranslator subfolder.
 
 ## Video link
 ⟹ Provide a video highlighing your Hackathon module submission and provide a link to the video. You can use any video hosting, file share or even upload the video to this repository. _Just remember to update the link below_
@@ -32,31 +29,28 @@ _You can alternately paste a [link here](#docs) to a document within this repo c
 
 - List any dependencies
 - Or other modules that must be installed
-- Or services that must be enabled/configured
+- Or services that must be enabled/configuredn Azure AI Services Func app microservice within the DocuTranslator
 
 _Remove this subsection if your entry does not have any prerequisites other than Sitecore_
 
 ## Installation instructions
-⟹ Write a short clear step-wise instruction on how to install your module.  
+⟹ To run locally, refer to  'Development' section.
+Then Use the Sitecore CLI to serialize items into local environemnt
 
-> _A simple well-described installation process is required to win the Hackathon._  
-> Feel free to use any of the following tools/formats as part of the installation:
-> - Sitecore Package files
-> - Docker image builds
-> - Sitecore CLI
-> - msbuild
-> - npm / yarn
-> 
-> _Do not use_
-> - TDS
-> - Unicorn
- 
-for example:
+ ```ps1
+1. dotnet sitecore cloud login
+2. dotnet sitecore connect --ref xmcloud --cm  https://xmcloudcm.localhost --allow-write true -n default
+3. dotnet sitecore ser pull -n "default"
+```
 
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ...
-3. profit
-
+A solution requires the following settings to run locally
+ ```ps1
+1. "docu_translation_endpoint": "Azure AI services document translation endpoint",
+2. "azure_key": "Azure AI services document translation key",
+3. "docu_source_uri": "The URL for the source container containing documents to be translated",
+4. "docu_target_uri": "The URL for the target container to which the translated documents are written",
+5. "docu_target_lang": "The language code for the translated documents, e.g., fr for French"
+ ```
 ### Configuration
 ⟹ If there are any custom configuration that has to be set manually then remember to add all details here.
 
