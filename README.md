@@ -5,3 +5,4 @@
 - [Entry form template](ENTRYFORM.md)
   
 ### ⟹ [Insert your documentation here](ENTRYFORM.md) <<
+- SMOKE TEST push to origin
